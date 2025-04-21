@@ -57,15 +57,26 @@
 # else:
 #     print("Usted es un tatita")
 
-#ingresar 3 numeros y mostrar el mayor de los 3
-print("Ingrese 3 numeros")
-n1=int(input())
-n2=int(input())
-n3=int(input())
+# #ingresar 3 numeros y mostrar el mayor de los 3
+# print("Ingrese 3 numeros")
+# n1=int(input())
+# n2=int(input())
+# n3=int(input())
 
-if n1>n2 and n1>n3:
-    print("El mayor es el numero " , n1)
-elif n2>n3:
-    print("El mayor es el numero " , n2)
-else:
-    print("El mayor es el numero " , n3)
+# if n1>n2 and n1>n3:
+#     print("El mayor es el numero " , n1)
+# elif n2>n3:
+#     print("El mayor es el numero " , n2)
+# else:
+#     print("El mayor es el numero " , n3)
+
+
+# #programa de clave
+# clave=3344
+
+# pas=int(input("Ingrese su clave "))
+
+# if pas==clave:
+#     print("Bienvenido al sistema")
+# else:
+#     print("Clave invalida")
