@@ -2,6 +2,7 @@
 # edad=64
 
 # print("hola", nombre, "su edad es", edad)
+# print(f"hola {nombre} y su edad es {edad}")
 
 # # solicitud de datos
 # print("Ingrese su nombre")
@@ -80,3 +81,32 @@
 #     print("Bienvenido al sistema")
 # else:
 #     print("Clave invalida")
+
+
+# cant=int(input("Ingrese la cant de  numeros :"))
+
+# for i in range(cant):
+#     num=int(input("Ingrese un numero :"))
+#     if num %2==0:
+#         print("El numero es par ")
+#     else:
+#         print("El numero es impar ")
+
+# Pedir u numero y mostrear todos los 
+# pares e impares desde el 1 hasta ese numero
+
+# num=int(input("Ingrese un numero :"))
+
+# # for i in range(num):
+# #     if (i+1) %2==0:
+# #         print(f"El numero {i+1} es par ")
+# #     else:
+# #         print(f"El numero {i+1} es impar ")
+
+# for i in range(1,num+1):
+#     if (i) %2==0:
+#         print(f"El numero {i} es par ")
+#     else:
+#         print(f"El numero {i} es impar ")
+
+
