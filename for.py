@@ -106,7 +106,7 @@
 # print("La cantidad de caracteres es", c)
 
 
-### SUPERMERCADO 
+# ## SUPERMERCADO 
 # # Preguntar al usuario cunatos productos llevra.´
 # # escribir listado de 3 productos y sus precios
 # # mostrar el total neto de la compra
@@ -138,7 +138,31 @@
 # print ("EL total mas IVA es ", total*1.19)
 
 
-	
+frase=input("Ingrese una frase")
+cantcar=0
+v=0
+cons=0
+e=0
+for i in frase:
+    print(i)
+    cantcar+=1
+    if i.lower() in "aeiouáéíóú":
+        v+=1
+        # v=v+1
+    elif i==" ":
+        e+=1
+    else:
+        cons+=1 
+    
+
+
+
+
+print(f"El total de caracteres es {cantcar}")
+print(f"El total de vocales es {v}")
+print(f"El total de consonantes es {cons}")
+
+
 	    
 
 
