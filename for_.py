@@ -64,33 +64,67 @@
 # print("EL total neto es ", total)
 # print("EL total con IVA es ", total*1.19)
 
-# VOTATOON
-# Designe 2 cantdidatos. Pregunte cuanto votantes son
-# por cada votante , debe peguntar por quin votrá
-# cuente la cantidad de votos y muestre los resultados
-# definir quien ganó la votacion. Considere empate
+# # VOTATOON
+# # Designe 2 cantdidatos. Pregunte cuanto votantes son
+# # por cada votante , debe peguntar por quin votrá
+# # cuente la cantidad de votos y muestre los resultados
+# # definir quien ganó la votacion. Considere empate
 
-c1="Shaggy"
-c2="Dexter"
-cv1=0
-cv2=0
+# c1="Shaggy"
+# c2="Dexter"
+# cv1=0
+# cv2=0
 
-cant=int(input("Ingres la cantidad de votantes"))
+# cant=int(input("Ingres la cantidad de votantes"))
 
-for i in range(cant):
-    print(f"Seleccione a su candidato: 1.- {c1} , 2.- {c2}")
-    voto=int(input)
-    if voto==1:
-        # cv1=cv1+1
-        cv1+=1
+# for i in range(cant):
+#     print(f"Seleccione a su candidato: 1.- {c1} , 2.- {c2}")
+#     voto=int(input)
+#     if voto==1:
+#         # cv1=cv1+1
+#         cv1+=1
+#     else:
+#         cv2+=1
+# print(f"La cantidad de votos de {c1} es {cv1}")
+# print(f"La cantidad de votos de {c2} es {cv2}")
+
+# if cv1>cv2:
+#     print(f"El ganador es {c1}")
+# elif cv1<cv2:
+#     print(f"El ganador es {c2}")
+# else:
+#     print("Empate")
+
+#ingresar 3 numeros y mostrar el mayor de los 3
+# print("Ingrese 3 numeros")
+# n1=int(input())
+# n2=int(input())
+# n3=int(input())
+
+# m=max(n1,n2,n3)
+# print("El numero mayor es ", m)
+
+# if n1>n2 and n1>n3:
+#     print("El mayor es el numero " , n1)
+# elif n2>n3:
+#     print("El mayor es el numero " , n2)
+# else:
+#     print("El mayor es el numero " , n3)
+
+import time
+
+palabra=input("Ingrese una frase")
+cont=0
+vocales=0
+cons=0
+for i in palabra.lower():
+    cont=cont+1
+    print(cont, i)
+    if i in "aeiou":
+        # vocales=vocales+1
+        vocales+=1
     else:
-        cv2+=1
-print(f"La cantidad de votos de {c1} es {cv1}")
-print(f"La cantidad de votos de {c2} es {cv2}")
-
-if cv1>cv2:
-    print(f"El ganador es {c1}")
-elif cv1<cv2:
-    print(f"El ganador es {c2}")
-else:
-    print("Empate")
+        cons+=1
+print("La cantidad de caracteres son ", cont)
+print("La cantidad de vocales son ", vocales)
+print("La cantidad de consonantes son ", cons)

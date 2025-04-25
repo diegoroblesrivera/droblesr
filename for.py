@@ -106,11 +106,11 @@
 # print("La cantidad de caracteres es", c)
 
 
-# ## SUPERMERCADO 
-# # Preguntar al usuario cunatos productos llevra.´
-# # escribir listado de 3 productos y sus precios
-# # mostrar el total neto de la compra
-# # y mostrar el total mas IVA (19%)
+## SUPERMERCADO 
+# Preguntar al usuario cunatos productos llevra.´
+# escribir listado de 3 productos y sus precios
+# mostrar el total neto de la compra
+# y mostrar el total mas IVA (19%)
 
 # cant=int(input("Cuantos productos llevará? :"))
 # total=0
@@ -137,32 +137,65 @@
 # print ("EL total neto es ", total)
 # print ("EL total mas IVA es ", total*1.19)
 
+# variable=input()
 
-frase=input("Ingrese una frase")
-cantcar=0
-v=0
-cons=0
-e=0
-for i in frase:
-    print(i)
-    cantcar+=1
-    if i.lower() in "aeiouáéíóú":
-        v+=1
-        # v=v+1
-    elif i==" ":
-        e+=1
-    else:
-        cons+=1 
+# frase=input("Ingrese una frase")
+# cantcar=0
+# v=0
+# cons=0
+# e=0
+# for i in frase:
+#     print(i)
+#     cantcar+=1
+#     if i.lower() in "aeiouáéíóú":
+#         v+=1
+#         # v=v+1
+#     elif i==" ":
+#         e+=1
+#     else:
+#         cons+=1 
     
 
 
 
 
-print(f"El total de caracteres es {cantcar}")
-print(f"El total de vocales es {v}")
-print(f"El total de consonantes es {cons}")
+# print(f"El total de caracteres es {cantcar}")
+# print(f"El total de vocales es {v}")
+# print(f"El total de consonantes es {cons}")
 
 
+
+# Preguntar al usuario cuantos productos llevará
+# escribir listado de 3 productos y sus precios
+# mostrar el total neto de la compra
+# y mostrar el total mas IVA (19%)
+
+
+cant=int(input("Cuantos productos llevará"))
+total=0
+for i in range (cant):
+        print('''
+        Que producto llevará?
+		1.- Diazepam $9000
+		2.- Metametozona $18500
+		3.- Oblea China $1000 ''')
+        op=int(input())
+        if op==1:
+            print("Usted lleva Diazepam")
+            total=total+9000
+        elif op==2:
+            print("Usted lleva Metametozona")
+            total=total+18500
+        elif op==3:
+            print("Usted lleva Oblea China")
+            total=total+1000
+        else:
+             print("Opcion no valida")
+print("EL total neto es ", total)
+print("EL total mas IVA es ", total*1.19)
+
+            
+        
 	    
 
 
