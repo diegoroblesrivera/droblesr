@@ -110,3 +110,41 @@
 #         print(f"El numero {i} es impar ")
 
 
+## Ingresar 3 numeros y ver el mayor de ellos
+
+# n1=int(input("ingrese un numero :"))
+# n2=int(input("ingrese un numero :"))
+# n3=int(input("ingrese un numero :"))
+
+# m= max(n1,n2,n3)
+# print(f" El mayor es {m}")
+
+# if n1>n2 and n1>n3:
+#     print(f"El numero mayor es {n1}")
+#     # print("El numero mayor es", n1)
+# elif n2>n3:
+#     print(f"El numero mayor es {n2}")
+# else:
+#     print(f"El numero mayor es {n3}")
+
+
+
+# ## Ingresar 3 numero y promediarlos
+
+# n1=int(input("ingrese un numero :"))
+# n2=int(input("ingrese un numero :"))
+# n3=int(input("ingrese un numero :"))
+
+# prom=(n1+n2+n3)/3
+
+# print("El promedio es ", round( prom, 2))
+
+
+## pares impares
+n1=int(input("ingrese un numero :"))
+
+if n1 %2==0:
+    print(f"El numero {n1} es par ")
+else:
+    print(f"El numero {n1} es impar ")
+
