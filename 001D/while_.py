@@ -173,4 +173,109 @@ import random
 # Usar clave secreta para iniciar y segun la clave 
 # asociar el saldo disponible
 
+# intentos=3
 
+# while intentos>0:
+#     intentos-=1
+#     color=input("Ingrese un color: ")
+
+#     if color.lower()!="negro":
+#         print("El color  no es el requerido")
+#     else:
+#         print("Éste es el color requerido")
+#         break
+    
+
+# La Florida 20%, La pintana30%, Puente Alto25%, San Joaquin 15%
+# Grupo familiar: 1=>2%, 2 a 4=>3%, 5 o mas=>4%
+# Preguntar al usuario en que comuna vive
+# Preguntar al usuario con cuantas personas vive
+# El arancel actual es de 200.000 por semestre
+# Basados en las respuestas del usuario  y ebn 
+# la informacion dada, calcular su descuento
+'''
+ej :
+Ingrese su comuna : La FLorida
+Ingrese su grupo familiar( numero entero) : 4
+EL total del descuento es 23%
+EL total a pagar es $154.000
+'''
+
+# Clasificar segun categoria y precio
+# Cat 1 +200, cat 2 +400, cat 3 +600
+# Precios : 1000 y menos;3%, entre 1001 y 5000 ;5% , 5001 y mas 6%
+# Poner listado de 3 productos por categoria, las cat son 1 ,2 y 3
+# Agregar los impuestos al ´precio , segun la cat y luego 
+# aplicar descuento al total de la boleta segun el monto
+'''
+Ej:
+Producto 1, cat 2, 1500 + 400
+Producto 2 cat 1, 8000 + 200
+EL total es 10100 * - 6%
+EL total a pagar es: 9494
+'''
+total=0
+print('''
+    Selecione una categoria
+      1.- Zpatillas
+      2.- Poleras
+      3.- Pelotas
+      ''')
+cat=int(input())
+
+if cat==1:
+    print('''
+        1.- Zapatilla runing 2000
+        2.- Zapatilla Futbolito 1500
+        3.- Zapatilla Padel 20      
+          ''')
+    op=int(input())
+    if op==1:
+        total+=2000+200
+    elif op==2:
+        total+=1500+200
+    elif op==3:
+        total+=20+200
+    else:
+        print("Opcion invalida")
+elif cat==2:
+    print('''
+        1.- Polera Runing 3000
+        2.- Camiseta Futbolito 1500
+        3.- Polera Padel 60      
+          ''')
+    op=int(input())
+    if op==1:
+        total+=3000+400
+    elif op==2:
+        total+=1500+400
+    elif op==3:
+        total+=60+400
+    else:
+        print("Opcion invalida")
+elif cat==3:
+    print('''
+        1.- Pelota Voley 1000
+        2.- Pelota Futbolito 2500
+        3.- Pelota Rugby 3500     
+          ''')
+    op=int(input())
+    if op==1:
+        total+=1000+600
+    elif op==2:
+        total+=2500+600
+    elif op==3:
+        total+=3500+600
+    else:
+        print("Opcion invalida")
+else:
+    print("Opcion invalida")
+
+if total<=1000:
+    total= total*0.97
+elif total<=1001 and total>=5000:
+    total= total*0.95
+elif total>=5001:
+    total= total*0.94
+
+print(" EL total es ", total)
