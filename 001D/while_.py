@@ -203,7 +203,8 @@ EL total a pagar es $154.000
 
 # Clasificar segun categoria y precio
 # Cat 1 +200, cat 2 +400, cat 3 +600
-# Precios : 1000 y menos;3%, entre 1001 y 5000 ;5% , 5001 y mas 6%
+# Decuento Precios : 1000 y menos;3%, entre 1001 y 5000 
+# ;5% , 5001 y mas 6%
 # Poner listado de 3 productos por categoria, las cat son 1 ,2 y 3
 # Agregar los impuestos al ´precio , segun la cat y luego 
 # aplicar descuento al total de la boleta segun el monto
