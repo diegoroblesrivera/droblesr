@@ -1,7 +1,7 @@
 #Explicacion y uso de while
 # 3344!=1234
 
-# Clave con intentos infinitos
+# #Clave con intentos infinitos
 # clave=3344
 # password=int(input("Ingrese su pass :"))
 # while clave!=password:
@@ -32,6 +32,11 @@ import random
 
 # print(numAzar)
 
+dado=random.randint(1,6)
+print(dado)
+
+#Generar u 
+
 # # necesito al menos 20 puntos pra abrir la puerta
 
 # if numAzar>=20:
@@ -55,7 +60,7 @@ import random
 # num=int(input("Adivine el número"))
 
 # while num!=numeroAadivinar:
-#     print(numeroAadivinar)
+#     # print(numeroAadivinar)
 #     if num>numeroAadivinar:
 #         print("El numero a adivinar es menor")
 #     else:
@@ -66,7 +71,7 @@ import random
 # # Ruleta rusa
 
 # barril=random.randint(1,6)
-# rul=int(input("Dispare : "))
+# rul=int(input("Dispare"))
 
 # while rul!=barril:
 #     rul=int(input("Dispare"))
@@ -75,8 +80,14 @@ import random
 
 # LUDO 
 
+
+
+
 import time
 
+# for i in range(5):
+#     print(i)
+#     time.sleep(1)
 
 # La Florida 20%, La pintana30%, Puente Alto25%, San Joaquin 15%
 # Grupo familiar: 1=>2%, 2 a 4=>3%, 5 o mas=>4%
@@ -92,8 +103,6 @@ Ingrese su grupo familiar( numero entero usted incluido ) : 4
 EL total del descuento es 23%
 EL total a pagar es $154.000
 '''
-
-
 # arancel=200000
 # descuento=0
 # print('''
@@ -131,12 +140,5 @@ EL total a pagar es $154.000
 # total=arancel-desc
 # print("El total a pagar es $",total)
 
-# necesito al menos 20 puntos pra abrir la puerta
+# print("/"*10)
 
-
-puntos=random.randint(1,30)
-print(puntos)
-if puntos>=20:
-    print("Usd logró abrir la puerta")
-else:
-    print("Puntos insuficientes")
