@@ -1,5 +1,8 @@
 # print("Repaso General")
 
+#####LINK DEL TALLER#####
+#https://github.com/diegoroblesrivera/droblesr
+
 ## Declaracion de variables
 # nombre="Diego"
 # edad=64
