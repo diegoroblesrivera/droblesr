@@ -1,3 +1,13 @@
+###TIPOS DE DATOS###
+'''
+Caracter : String # Variables tipo texto EJ: "Mariano"
+Entero  : Integer (int) # Variable tipo numero entero EJ: 18
+Real    : float # numeros con decimas 
+Logico  : boolean # permite solo 2 valora, posibles True o False
+
+'''
+
+
 # nombre="Diego"
 # edad=64
 
@@ -140,11 +150,11 @@
 # print("El promedio es ", round( prom, 2))
 
 
-## pares impares
-n1=int(input("ingrese un numero :"))
+# ## pares impares
+# n1=int(input("ingrese un numero :"))
 
-if n1 %2==0:
-    print(f"El numero {n1} es par ")
-else:
-    print(f"El numero {n1} es impar ")
+# if n1 %2==0:
+#     print(f"El numero {n1} es par ")
+# else:
+#     print(f"El numero {n1} es impar ")
 

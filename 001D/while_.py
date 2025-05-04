@@ -99,50 +99,53 @@ import random
 # Existe posibilidad de ataque critico del 20% sera atk*2
 # gana el que le quita todo el HP al rival
 
-# print("Ingrese los nombres de los peleadores")
-# p1=input("Peleador 1")
-# p2=input("Peleador 2")
-# hp1=50
-# hp2=50
-# turno=random.randint(1,2)
+print("Ingrese los nombres de los peleadores")
+p1=input("Peleador 1")
+p2=input("Peleador 2")
+hp1=50
+hp2=50
+turno=random.randint(1,2)
 
-# while hp1>0 and hp2>0 : 
-#     if turno %2==0:
-#         print("turno de ",p1)
-#         atk=random.randint(3,15)
-#         critical=random.randint(1,5)
-#         if critical==3:
-#             atk*2
-#             print("Ataque critico")
-#         hp2-=atk
-#         time.sleep(1)
-#         print(f"Vida de {p2}")
-#         print("/"*hp2)
-#     else:
-#         print("turno de ",p2)
-#         atk=random.randint(3,15)
-#         critical=random.randint(1,5)
-#         if critical==3:
-#             atk*2
-#             print("Ataque critico")
-#         hp1-=atk
-#         time.sleep(1)
-#         print(f"Vida de {p1}")
-#         print("/"*hp1)
-#     turno+=1
+while hp1>0 and hp2>0 : 
+    if turno %2==0:
+        print("turno de ",p1)
+        atk=random.randint(3,15)
+        critical=random.randint(1,5)
+        if critical==3:
+            atk*2
+            print("Ataque critico")
+        hp2-=atk
+        time.sleep(1)
+        print(f"Vida de {p2}")
+        print("[]"*hp2)
+    else:
+        print("turno de ",p2)
+        atk=random.randint(3,15)
+        critical=random.randint(1,5)
+        if critical==3:
+            atk*2
+            print("Ataque critico")
+        hp1-=atk
+        time.sleep(1)
+        print(f"Vida de {p1}")
+        print("[]"*hp1)
+    turno+=1
 
-# ultra=random.randint(3,10)
+ultra=random.randint(3,10)
 
-# if hp1>hp2:
-#     for i in range(ultra):
-#         print("Kick")
-#         time.sleep(1)
-#     print(f"Ha ganado el {p1}")
-# else:
-#     for i in range(ultra):
-#         print("Kick")
-#         time.sleep(1)
-#     print(f"Ha ganado el {p2}")
+if hp1>hp2:
+    for i in range(ultra):
+        print("Kick")
+        time.sleep(1)
+    print(f"Ha ganado el {p1}")
+    print("UTRAAAAAAAAAA!")
+else:
+    for i in range(ultra):
+        print("Kick")
+        time.sleep(1)
+    print(f"Ha ganado el {p2}")
+    print("UTRAAAAAAAAAA!")
+    
 
 
 # while True:
@@ -215,68 +218,68 @@ Producto 2 cat 1, 8000 + 200
 EL total es 10100 * - 6%
 EL total a pagar es: 9494
 '''
-total=0
-print('''
-    Selecione una categoria
-      1.- Zpatillas
-      2.- Poleras
-      3.- Pelotas
-      ''')
-cat=int(input())
+# total=0
+# print('''
+#     Selecione una categoria
+#       1.- Zpatillas
+#       2.- Poleras
+#       3.- Pelotas
+#       ''')
+# cat=int(input())
 
-if cat==1:
-    print('''
-        1.- Zapatilla runing 2000
-        2.- Zapatilla Futbolito 1500
-        3.- Zapatilla Padel 20      
-          ''')
-    op=int(input())
-    if op==1:
-        total+=2000+200
-    elif op==2:
-        total+=1500+200
-    elif op==3:
-        total+=20+200
-    else:
-        print("Opcion invalida")
-elif cat==2:
-    print('''
-        1.- Polera Runing 3000
-        2.- Camiseta Futbolito 1500
-        3.- Polera Padel 60      
-          ''')
-    op=int(input())
-    if op==1:
-        total+=3000+400
-    elif op==2:
-        total+=1500+400
-    elif op==3:
-        total+=60+400
-    else:
-        print("Opcion invalida")
-elif cat==3:
-    print('''
-        1.- Pelota Voley 1000
-        2.- Pelota Futbolito 2500
-        3.- Pelota Rugby 3500     
-          ''')
-    op=int(input())
-    if op==1:
-        total+=1000+600
-    elif op==2:
-        total+=2500+600
-    elif op==3:
-        total+=3500+600
-    else:
-        print("Opcion invalida")
-else:
-    print("Opcion invalida")
+# if cat==1:
+#     print('''
+#         1.- Zapatilla runing 2000
+#         2.- Zapatilla Futbolito 1500
+#         3.- Zapatilla Padel 20      
+#           ''')
+#     op=int(input())
+#     if op==1:
+#         total+=2000+200
+#     elif op==2:
+#         total+=1500+200
+#     elif op==3:
+#         total+=20+200
+#     else:
+#         print("Opcion invalida")
+# elif cat==2:
+#     print('''
+#         1.- Polera Runing 3000
+#         2.- Camiseta Futbolito 1500
+#         3.- Polera Padel 60      
+#           ''')
+#     op=int(input())
+#     if op==1:
+#         total+=3000+400
+#     elif op==2:
+#         total+=1500+400
+#     elif op==3:
+#         total+=60+400
+#     else:
+#         print("Opcion invalida")
+# elif cat==3:
+#     print('''
+#         1.- Pelota Voley 1000
+#         2.- Pelota Futbolito 2500
+#         3.- Pelota Rugby 3500     
+#           ''')
+#     op=int(input())
+#     if op==1:
+#         total+=1000+600
+#     elif op==2:
+#         total+=2500+600
+#     elif op==3:
+#         total+=3500+600
+#     else:
+#         print("Opcion invalida")
+# else:
+#     print("Opcion invalida")
 
-if total<=1000:
-    total= total*0.97
-elif total<=1001 and total>=5000:
-    total= total*0.95
-elif total>=5001:
-    total= total*0.94
+# if total<=1000:
+#     total= total*0.97
+# elif total<=1001 and total>=5000:
+#     total= total*0.95
+# elif total>=5001:
+#     total= total*0.94
 
-print(" EL total es ", total)
+# print(" EL total es ", total)

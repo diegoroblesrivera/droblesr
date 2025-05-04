@@ -10,7 +10,7 @@
 # # pide un numero al usuario y muestra la 
 # # tabla de ese numero hasta el 10
 
-# # Escribir i,"x", j, "=",i*j
+
 # num=int(input("Ingrese un numero ")) 
 
 
@@ -31,8 +31,8 @@
 # for i in range(cant):
 #     print("Ingrese nota ", i+1)
 #     nota=float(input())
-#     suma+=nota
-#     # suma=suma+nota
+#     suma+=nota # suma el valor de nota a la variable suma
+#     # suma=suma+nota # tae el valor actual de suma y le suma la nota, actualizando suma
 # prom=suma/cant
 # print("El promedio es ", prom)
 

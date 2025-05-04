@@ -80,6 +80,16 @@ print(randy)
 # peleas por turnos, casa uno acata entre 2 y 10
 # gana quien quita todo el HP al contrincante
 
+# Categorizar jugadores 
+# En una liga amateour, se paga a lo jugadores de futbol
+# Cuando anota mas goles recibe nu bono en su paga
+# Entre 1-3 goles, 4%; entre 4-6 goles 6%, 7 goles o mas 8%
+# Si su equipo queda entre los 3 primeros, +3000 
+# Si su equipo queda entre 4-8, +2000 
+# Si su equipo queda entre 9 y mas, +1000 
+# El pago base por 
+
+
 
 
 
