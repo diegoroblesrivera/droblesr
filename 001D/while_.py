@@ -117,7 +117,7 @@ while hp1>0 and hp2>0 :
         hp2-=atk
         time.sleep(1)
         print(f"Vida de {p2}")
-        print("[]"*hp2)
+        print("▄"*hp2)
     else:
         print("turno de ",p2)
         atk=random.randint(3,15)
@@ -128,7 +128,7 @@ while hp1>0 and hp2>0 :
         hp1-=atk
         time.sleep(1)
         print(f"Vida de {p1}")
-        print("[]"*hp1)
+        print("▄"*hp1)
     turno+=1
 
 ultra=random.randint(3,10)
