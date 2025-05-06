@@ -142,3 +142,17 @@ EL total a pagar es $154.000
 
 # print("/"*10)
 
+
+# Calcular el puntaje de credito
+# De bede calcular que tanto credito tiene una persona
+# en cierta entidad financiera, debera considerar
+# cantidad de ingresos, nivel educacional y nacionalidad
+# Cantidad de ingresos
+# 500.000 a 1.000.000 : 300.000
+# 1.000.000 a 1.500.000: 650.000
+# 1.500.001 o mas : 1.000.000
+# Nivel Educacional 
+# Basico : x1, medio: x1.3 , superior: x1.5
+# Nacionalidad 
+# Chilena : +300.000, Extranjero: +0
+
