@@ -82,14 +82,13 @@
 
 print("Ingrese 2 digitos")
 
-n1=int(input("INgrese un numero"))
-n2=int(input("INgrese un numero"))
+n1=int(input("Ingrese un numero"))
+n2=int(input("Ingrese un numero"))
+
 
 while n1>n2:
    print("El segundo numero no puede ser menor")
    n2=int(input("INgrese un numero"))
-
-
 
 import random
 from random import randint
