@@ -1,14 +1,14 @@
 #Explicacion y uso de while
 # 3344!=1234
 
-# #Clave con intentos infinitos
-# clave=3344
-# password=int(input("Ingrese su pass :"))
-# while clave!=password:
-#     print ("ERORR, clave invalida")
-#     password=int(input("Ingrese su pass :"))
+#Clave con intentos infinitos
+clave=3344
+password=int(input("Ingrese su pass :"))
+while clave!=password:
+    print ("ERORR, clave invalida")
+    password=int(input("Ingrese su pass :"))
 
-# print("Bienvenido al sistema")
+print("Bienvenido al sistema")
 
 ##Clave con solo 3 intentos
 
