@@ -53,3 +53,5 @@ def azarN():
     num=random.randint(1,5)
     return num
 print(azarN()*10)
+
+
