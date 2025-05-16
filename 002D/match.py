@@ -58,7 +58,8 @@ def calcu():
                 print("Debe ingreser un numero entero")
                 print(f"Error: {errorr}")
 
-calcu()
+# calcu()5
+
 
 ## nuevo menu recursivo
 # debe tener 3 programas creados enteriormente
@@ -135,6 +136,7 @@ def menu_nuevo():
 # con su precio correspondiente
 # 3.- Sacar boleta, calcular el precio neto
 # y el precio mas IVA. Mostrar totales
+# bonus contar la cantidad de articulos
 
 # 4.- Salir 
 # Consideraciones:
@@ -144,7 +146,7 @@ def menu_nuevo():
 # Los montos de los productos son fijos
 # Mostrar tb el total de articulos.
 # '''
-
+import os
 total=0
 carrito=0
 while True:
@@ -156,7 +158,7 @@ while True:
         ''')
 
     op=int(input())
-
+    os.system('cls')
     match op:
         case 1:
             nombre=input("ingres su nombre: ")

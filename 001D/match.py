@@ -126,8 +126,7 @@ def arancel():
 #     print ("hola")
 
 
-# promedios por cantidad de alumnos
-# 
+##### Promedios por cantidad de alumnos#####
 # Pedir cantidad de alumnos 
 # pedir notas por cada alumno
 # premediar a cada alumno 
