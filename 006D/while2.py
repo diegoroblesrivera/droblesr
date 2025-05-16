@@ -72,8 +72,8 @@
 # print("/"*100)
 
 import random
-randy=random.randint(1,10)
-print(randy)
+# randy=random.randint(1,10)
+# print(randy)
 # STREET FIGTHER
 
 # designe 2 peleadores cada uno con 50 HP
@@ -96,9 +96,8 @@ print(randy)
 # Sera mostrado en la boleta, con un saludo
 # 2.- Comprar, poner productos para poder comprar
 # con su precio correspondiente
-# 3.- Sacar boleta, calcular el precio neto
+# 3.- Generar boleta, calcular el precio neto
 # y el precio mas IVA. Mostrar totales
-
 # 4.- Salir 
 # Consideraciones:
 # Por lo menos 3 productos
@@ -107,6 +106,10 @@ print(randy)
 # Los montos de los productos son fijos
 # Mostrar tb el total de articulos.
 # '''
+
+
+
+
 total=0
 carrito=0
 while True:
@@ -134,16 +137,19 @@ while True:
                 match opc:
                     case 1:
                        total+=1200
+                       carrito+=1 
                     case 2:
                        total+=1400
+                       carrito+=1 
                     case 3:
                        total+=1000
+                       carrito+=1 
                     case 4:
                         break
                     case _:
                         print("Producto no valido")
                 print("Su total parcial es ", total)
-                carrito+=1        
+                       
         case 3:
             print(f'''
                 ----------------0-----------------  
@@ -157,6 +163,6 @@ while True:
         case 4:
             break
         case _:
-            print("opcion invalida")
+            print("Opcion invalida")
 
 

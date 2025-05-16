@@ -137,10 +137,9 @@ def menu_nuevo():
 # 3.- Sacar boleta, calcular el precio neto
 # y el precio mas IVA. Mostrar totales
 # bonus contar la cantidad de articulos
-
 # 4.- Salir 
 # Consideraciones:
-# Por lo menos 3 productos
+# Por lo menos 3 productos disponibles
 # No hay limite de compra
 # Se puede salir en cualquier momento
 # Los montos de los productos son fijos
