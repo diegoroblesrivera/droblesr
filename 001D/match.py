@@ -100,10 +100,10 @@ def arancel():
 # 1.-Ingresar nombre del usuario
 # Sera mostrado en la boleta, con un saludo
 # 2.- Comprar, poner productos para poder comprar
-# con su precio correspondiente
+# con su precio correspondiente ej: producto $1000
 # 3.- Sacar boleta, calcular el precio neto
 # y el precio mas IVA. Mostrar totales
-
+# bonus, mostrar cant de articulos que lleva
 # 4.- Salir 
 # Consideraciones:
 # Por lo menos 3 productos
