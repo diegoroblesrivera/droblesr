@@ -3,10 +3,14 @@
 # Perros de caza
 # Pida al usuario la cantidad de perros
 # Muestre cual es la cuota minima de conejos
-# lugo consulte cauntos conejos trajo
+# lugo consulte cuantos conejos trajo
 # si el perro tran¿jo la cantidad minima
 # cumplio la cuota, sino, se queda sin filete
 # mostrar resumen de perro que cumplieron y los que no
+
+
+
+
 
 import random
 # while True:
@@ -120,7 +124,7 @@ import random
 # El lavado tiene 3 niveles
 # 1.- Full $ 15.000, 2- standard 10.000, 3.- Básico $7.000.
 # al mostrar las ventas diarias, debe mostar la 
-# cantidad de autos qu ahn ingresado y el monto total 
+# cantidad de autos que han ingresado y el monto total 
 # recaudado. Tambien debe mostrar el monto mas alto pagado  .
 
 
