@@ -126,5 +126,34 @@ import random
 # al mostrar las ventas diarias, debe mostar la 
 # cantidad de autos que han ingresado y el monto total 
 # recaudado. Tambien debe mostrar el monto mas alto pagado  .
+import time
+# Creacion de armas en Minecraft
+# crear espadas de diamante 
+# para crear una espada necesitas 
+# 2 diamantes y un palo 
+# Para obtener recursos debes tener 
+# el sig menu
+# 1.- Minar, se buscan recursos. La posibilidad de encontrar
+# diamante es 1 entre 7 y palo 1 entre  3, y la de carbon 1 entre 3
+# minar toma 3 segundos.
+# 2.- Consultar recursos, mustra lso recursos acomulados
+# 3.- Crear espadas, va a crear tantas espadas como pueda
+# con los resursos existentes
+# 4.- salir, sale 
+# 
 
+time.sleep(3)
+try:
+    #codigo
+    if diamante >=2 and palo>=1:
+        print("Espada creada")
+except Exception:
+    print("Mensaje de error")
 
+recurso=random.choice("diamante", "palo", "carbon")
+
+while True:
+    op=int(input())
+    break
+for i in range():
+    print("JJ")
