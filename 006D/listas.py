@@ -88,12 +88,12 @@ while True:
     op=int(input("Ingese una opcion: "))
     match op:
         case 1:
-            nom=input("Ingrese un Producto: ")
-            productos.append(nom)
-            ape=int(input("Ingrese un Precio: "))
-            precios.append(ape)
+            pro=input("Ingrese el nombre del Producto: ")
+            productos.append(pro)
+            pre=int(input("Ingrese el Precio: "))
+            precios.append(pre)
         case 2:
-                for i in range(3):
+                for i in range(len(productos)):
                     print(i+1, ".-", productos[i], "$", precios[i] )
                 pro=int(input("Selecione que quiere comprar: "))
                 carrito.append(pro-1)
