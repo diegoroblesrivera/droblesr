@@ -2,9 +2,9 @@
 # que es una lista? 
 # es una coleccion de datos
 
-#     -6 -5 -4 -3 -2 -1
+#       -6 -5 -4 -3 -2 -1
 numeros=[4, 3, 8,9,66,41]
-#      0  1  2 3  4 5
+#        0  1  2 3  4 5
 
 # print(numeros.insert(3,1000))
 # print(numeros)
@@ -79,13 +79,18 @@ precios=[70000, 30000, 15000]
 carrito=[]
 
 while True:
-    print('''
-        1.- Ingresar productos a la tienda
-        2.- Comprar
-        3.- Crear Boleta
-        4.- Salir
-          ''')
-    op=int(input("Ingese una opcion: "))
+    while True:
+        try:
+            print('''
+                1.- Ingresar productos a la tienda
+                2.- Comprar
+                3.- Crear Boleta
+                4.- Salir
+                ''')
+            op=int(input("Ingese una opcion: "))
+            break
+        except Exception:
+             print("Ingrese un numero entero válido")
     match op:
         case 1:
             pro=input("Ingrese el nombre del Producto: ")
@@ -127,4 +132,53 @@ Crear programa de manejo de notas
 5.- Limpiar todas las notas
 6.- Salir
 '''
+
+notas=[7.0,4.6,4.9, 7.0,5.6]
+
+while True:
+    while True:
+        try:
+            print('''   
+
+                1.- ingresar notas
+                2.- borrar nota
+                3.- ver notas colocadas
+                4.- promedio de notas, nota mayor y nota menor
+                5.- borrar toda las notas
+                6.- salir
+                    ''')
+            op=int(input())
+            break
+        except Exception:
+            print("Debe ingreser un numero entero valido")
+    
+
+    match op:
+        case 1:
+            nota=float(input("ingrese la nota del alumno: "))
+            notas.append(nota)
+        case 2:
+            for num, n in enumerate(notas):
+                print(num+1,".- ",n)
+            elim=int(input("ingrese cual quiere eliminar: "))
+            notas.pop(elim-1)
+        case 3:
+            print(notas)
+        case 4:
+            if len(notas) == 0:
+                print("No hay notas para calcular el promedio.")
+            else:
+                promedio=sum(notas)/len(notas)
+                print(f"El promedio de las notas es: {round(promedio, 1)}")
+                print("la nota mayor es", max(notas))
+                print("la nota menor es", min(notas))
+        case 5:
+            notas.clear()
+        case 6:
+            print("saliendo...")
+            break
+        case _:
+            print("ya wey escoge algo valido")
+
+
 
