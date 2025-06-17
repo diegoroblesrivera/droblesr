@@ -3,7 +3,7 @@
 # es una coleccion de datos
 
 #       -6 -5 -4 -3  -2   -1
-numeros=[3, 6, 2,88,9]
+numeros=[3, 6, 2, 88, 9]
 #        0  1  2  3   4   5
 
 # print(numeros)
