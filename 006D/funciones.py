@@ -90,9 +90,9 @@ art_aseo=[
 
 print(art_escolares[2]["nombre"])
 
-'''El articulo lapiz tiene un precio de 400'''
-for item in art_escolares:
-    print(f"El articulo {item["nombre"]} tiene un precio de {item["precio"]}")
+# '''El articulo lapiz tiene un precio de 400'''
+# for item in art_escolares:
+#     print(f"El articulo {item["nombre"]} tiene un precio de {item["precio"]}")
 
 '''
 1.- Agregar articulo
@@ -132,4 +132,64 @@ def menu(lista):
             print("El Error es", n)
 
 
-menu(art_aseo)
+# menu(art_aseo)
+
+personas={
+    1:{"nombre": "Liam Neeson",
+       "Telefono": 876765454,
+       "EstadoCivil": "Soltero",
+       "Ciudadano": True},
+    2:{"nombre": "Christian Bale",
+       "Telefono": 999765454,
+       "EstadoCivil": "Soltero",
+       "Ciudadano": False},
+    3:{"nombre": "Malcom Noname",
+       "Telefono": 988880000,
+       "EstadoCivil": "Soltero",
+       "Ciudadano": True},
+    4:{"nombre": "Alan Grant",
+       "Telefono": 999760000,
+       "EstadoCivil": "Casado",
+       "Ciudadano": True},
+}
+
+while True:
+    try:
+        print('''
+        1.- Ingresar Persona
+        2.- Mostrar listado
+        3.- Actualizar persona
+        4.- Borrar persona
+        5.- Salir
+        ''')
+        op=int(input("Seleccione un a opcion"))
+        match op:
+            case 1:
+                nom=input("Ingrese su nombre")
+                tel=int(input("Ingrese el numero de telefono"))
+                est=int(input("1.- Casado, 2.- Soltero "))
+                if est==1:
+                    estCivil="Casado"
+                else:
+                    estCivil="Soltero"
+                est=int(input("Es Ciudadano 1.- Si, 2.- No "))
+                if est==1:
+                    ciuda=True
+                else:
+                    ciuda=False
+                ld=len(personas)+1
+                personas[ld]={"nombre": nom,
+                            "Telefono": tel,
+                            "EstadoCivil": estCivil,
+                            "Ciudadano": ciuda}
+            case 2:
+                for n,persona in personas.items():
+                    print(n, persona)
+            case 5:
+                break
+            case _:
+                print("Opcion invalida")
+    except Exception as e:
+        print("EL error es: ", e)
+
+
