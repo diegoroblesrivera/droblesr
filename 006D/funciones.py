@@ -17,18 +17,23 @@ def ruleta():
         rul=int(input("Dispare"))
     print("BANG!!!")
 
+# funcion sin argumento y sin return
 def suma():
     n1=int(input("Ingrese un numero: "))
     n2=int(input("Ingrese otro numero: "))
     print(n1+n2)
 
+#con argumento y sin return
 def suma_arg(n1, n2):
     print(n1+n2)
 
+#sin argumento y con return
 def suma_ret():
     n1=int(input("Ingrese un numero: "))
     n2=int(input("Ingrese otro numero: "))
     return n1+n2
+
+# con argumento y con return
 def suma_ret_arg(n1,n2):
     return n1+n2
 
@@ -51,7 +56,7 @@ productos=[
     {"nombre":"estuche", "precio" : 1600}
 ]
 
-print(productos[2]["precio"])
+# print(productos[2]["precio"])
 
 
 def mostrar_articulos(lista):
@@ -88,7 +93,7 @@ art_aseo=[
     {"nombre":"paño", "precio" : 1100}
 ]
 
-print(art_escolares[2]["nombre"])
+# print(art_escolares[2]["nombre"])
 
 # '''El articulo lapiz tiene un precio de 400'''
 # for item in art_escolares:
@@ -153,43 +158,47 @@ personas={
        "Ciudadano": True},
 }
 
-while True:
-    try:
-        print('''
-        1.- Ingresar Persona
-        2.- Mostrar listado
-        3.- Actualizar persona
-        4.- Borrar persona
-        5.- Salir
-        ''')
-        op=int(input("Seleccione un a opcion"))
-        match op:
-            case 1:
-                nom=input("Ingrese su nombre")
-                tel=int(input("Ingrese el numero de telefono"))
-                est=int(input("1.- Casado, 2.- Soltero "))
-                if est==1:
-                    estCivil="Casado"
-                else:
-                    estCivil="Soltero"
-                est=int(input("Es Ciudadano 1.- Si, 2.- No "))
-                if est==1:
-                    ciuda=True
-                else:
-                    ciuda=False
-                ld=len(personas)+1
-                personas[ld]={"nombre": nom,
-                            "Telefono": tel,
-                            "EstadoCivil": estCivil,
-                            "Ciudadano": ciuda}
-            case 2:
-                for n,persona in personas.items():
-                    print(n, persona)
-            case 5:
-                break
-            case _:
-                print("Opcion invalida")
-    except Exception as e:
-        print("EL error es: ", e)
+print(personas[4]["Telefono"])
+
+# while True:
+#     try:
+#         print('''
+#         1.- Ingresar Persona
+#         2.- Mostrar listado
+#         3.- Actualizar persona
+#         4.- Borrar persona
+#         5.- Salir
+#         ''')
+#         op=int(input("Seleccione un a opcion"))
+#         match op:
+#             case 1:
+#                 nom=input("Ingrese su nombre")
+#                 tel=int(input("Ingrese el numero de telefono"))
+#                 est=int(input("1.- Casado, 2.- Soltero "))
+#                 if est==1:
+#                     estCivil="Casado"
+#                 else:
+#                     estCivil="Soltero"
+#                 est=int(input("Es Ciudadano 1.- Si, 2.- No "))
+#                 if est==1:
+#                     ciuda=True
+#                 else:
+#                     ciuda=False
+#                 ld=len(personas)+1
+#                 personas[ld]={"nombre": nom,
+#                             "Telefono": tel,
+#                             "EstadoCivil": estCivil,
+#                             "Ciudadano": ciuda}
+#             case 2:
+#                 for n,persona in personas.items():
+#                     print(n, persona)
+#             case 5:
+#                 break
+#             case _:
+#                 print("Opcion invalida")
+#     except Exception as e:
+#         print("EL error es: ", e)
+
+
 
 
