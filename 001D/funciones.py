@@ -172,49 +172,55 @@ personas={
        "trabajando": True,
        "edad": 64}
 }
+personas[4]={"nombre": "Akiles Baeza",
+       "numeros":[7565000,978881],
+       "estadoCivil": "Soltero",
+       "trabajando": True,
+       "edad": 44}
+for p, datos in personas.items():
+    print(p, datos)
 
-
-while True:
-    try:
-        print('''
-        1.- Ingresar Persona
-        2.- Mostrar listado
-        3.- Actualizar persona
-        4.- Borrar persona
-        5.- Salir
-        ''')
-        op=int(input("Seleccione una opcion"))
-        match op:
-            case 1:
-                nombre=input("Ingrese el nombre: ")
-                numero=int(input("Ingrese el numero: "))
-                est=int(input("estado Civil 1.- Casado, 2.- Soltero: "))
-                if est==1:
-                    estCivil="Casado"
-                else:
-                    estCivil="Soltero"
-                edad=int(input("Ingrese la edad: "))
-                nextkey=len(personas)
-                personas[nextkey+1]={"nombre": nombre,
-                "numeros":[numero],
-                "estadoCivil": estCivil,
-                "trabajando": True,
-                "edad": edad}
-                print("Persona ingresada con exito")
-            case 2:
-                for persona, val in personas.items():
-                    print(persona, val)
-            case 4:
-                for persona, val in personas.items():
-                    print(persona, val)
-                dell=int(input("Seleccione cual desea borrar"))
-                del personas[dell]
-            case 5:
-                break
-            case _:
-                print("Opcion invalida")
-    except Exception as e:
-        print("EL error es: ", e)
+# while True:
+#     try:
+#         print('''
+#         1.- Ingresar Persona
+#         2.- Mostrar listado
+#         3.- Actualizar persona
+#         4.- Borrar persona
+#         5.- Salir
+#         ''')
+#         op=int(input("Seleccione una opcion"))
+#         match op:
+#             case 1:
+#                 nombre=input("Ingrese el nombre: ")
+#                 numero=int(input("Ingrese el numero: "))
+#                 est=int(input("estado Civil 1.- Casado, 2.- Soltero: "))
+#                 if est==1:
+#                     estCivil="Casado"
+#                 else:
+#                     estCivil="Soltero"
+#                 edad=int(input("Ingrese la edad: "))
+#                 nextkey=len(personas)
+#                 personas[nextkey+1]={"nombre": nombre,
+#                 "numeros":[numero],
+#                 "estadoCivil": estCivil,
+#                 "trabajando": True,
+#                 "edad": edad}
+#                 print("Persona ingresada con exito")
+#             case 2:
+#                 for persona, val in personas.items():
+#                     print(persona, val)
+#             case 4:
+#                 for persona, val in personas.items():
+#                     print(persona, val)
+#                 dell=int(input("Seleccione cual desea borrar"))
+#                 del personas[dell]
+#             case 5:
+#                 break
+#             case _:
+#                 print("Opcion invalida")
+#     except Exception as e:
+#         print("EL error es: ", e)
 
 
 

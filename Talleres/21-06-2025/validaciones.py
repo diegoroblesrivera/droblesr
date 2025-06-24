@@ -37,11 +37,11 @@
 # verifico si tengo mayusclas y/o minisculas
 # y tiene por lo menos un numero
 
-tieneMayus=False
-tieneMinus=False
-tieneNumero=False
+# tieneMayus=False
+# tieneMinus=False
+# tieneNumero=False
 
-#hacemos un recorrido de cada letra en mi clave
+# #hacemos un recorrido de cada letra en mi clave
 # for letra in clave:
 #     # verifico si la letra es mayuscula
 #     if letra.isupper():
@@ -62,6 +62,10 @@ tieneNumero=False
 #     print("Tiene por lo menos una minuscula")
 # else:
 #     print("NO Tiene por lo menos una miniscula")
+# if tieneNumero:
+#     print("Tiene por lo menos un numero")
+# else:
+#     print("NO Tiene por lo menos un numero")
 
 # if tieneMayus and tieneMinus and tieneNumero:
 #     print("La clave esta ok")
@@ -75,7 +79,7 @@ tieneNumero=False
 #     if caracter in specials:
 #         print("Si es un cracter especial")
   
-clave="Tredf99"      
+     
 def valida_pass(clave):
     Mayuscula=False
     Minuscula=False
@@ -88,10 +92,30 @@ def valida_pass(clave):
         if palabra.isdigit():
             Numero=True
     if Mayuscula and Minuscula and Numero and len(clave)==6:
-        print("la clave está bien escrita")
+        # print("la clave está bien escrita")
         return True
     else:
-        print("la clave está mal escrita")
+        # print("la clave está mal escrita")
         return False
 
-valida_pass(clave)
+# print(valida_pass("Tredf9"))
+
+# while True:
+#     pwd=input("Ingrese la clave: ")
+#     if valida_pass(pwd):
+#         print("clave Registrada")
+#         break
+#     else:
+#         print("Clave no registrada, intenta de nuevo")
+
+# clave="tingo*#"
+# grupo="!#$%&*¨[]"
+# for c in grupo:
+#     if c in clave:
+#         print("Si existe")
+#     else:
+#         print("NO existe")
+
+
+
+
