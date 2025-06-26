@@ -130,7 +130,7 @@ todos los vehiculos motorizados
 1.- Ingresar Vehiculo
 2.- Mostrar Vehiculos
 3.- Actualizar Vehiculo
-4.- Borrar Vehiculo
+4.- Marcar salida de Vehiculo con hora*
 5.- Mostar estadisticas: ultimo vehiculo ingresado, y total en garage
 6.- Salir
 
