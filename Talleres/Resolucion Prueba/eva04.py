@@ -4,7 +4,8 @@ personas={
        "codigo": "G1ght"}
 }
 def tipos(tipo):
-    if tipo in ["G", "V"]: 
+    # if tipo in ["G", "V"]: 
+    if tipo =="G" or tipo =="V": 
         return True
     else:
         return False
