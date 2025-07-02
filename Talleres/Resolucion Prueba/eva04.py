@@ -1,29 +1,32 @@
 personas={
-    1:{"nombre": "luka",
+    1:{"nombre": "Link",
        "tipo_entrada": "V",
-       "codigo": "G1ght"}
+       "codigo": "G1t9gh"},
+    2:{"nombre": "Zelda",
+       "tipo_entrada": "G",
+       "codigo": "PP9ogh"}
 }
 def tipos(tipo):
-    # if tipo in ["G", "V"]: 
+    # if tipo in ["G", "V"]: # esto hace lo mismo que la linea siguiente 
     if tipo =="G" or tipo =="V": 
         return True
     else:
         return False
 def valida_compra():
     while True:
-        nombre=input("Ingrese su nombre")
+        nombre=input("Ingrese su nombre: ")
         if valida_nombre(nombre):
             break
         else:
             print("El nombre ya existe el la DB, elije otro")
     while True:
-        tipo=input("Ingrese tipo entrada (V/G)")
+        tipo=input("Ingrese tipo entrada (V/G): ")
         if tipos(tipo):
             break
         else:
-            print("El nombre ya existe el la DB, elije otro")
+            print("El tipo solo debe ser V o G")
     while True:
-        codigo=input("Ingrese el codigo")
+        codigo=input("Ingrese el codigo: ")
         if valid_code(codigo):
             largo=list(personas.keys())[-1]
             personas[largo+1]= {"nombre": nombre,
@@ -36,23 +39,21 @@ def valida_compra():
 def valida_nombre(nombre):
     for k, v in personas.items():
         if v["nombre"]==nombre:
-            return True
-    return False
-
+            return False
+    return True
+#G1ght
 def valid_code(codigo):
     mayus=0
     space=0
     digitos=0
-
     for i in codigo:
         if i.isupper():
             mayus+=1
-        if i.islower():
+        if i ==" ":
             space+=1
         if i.isdigit():
             digitos+=1
     if mayus>=1 and space==0 and digitos>=1 and len(codigo)>=6:
-
         return True
     else:
         print("codigo invalido")
@@ -65,11 +66,11 @@ def consul(entradas):
     for d in entradas:
         if consultar in entradas[d]["nombre"]:
             print("COMPRADOR ENCONTRADO: ")
-            print(f"nombre: {entradas[d]['nombre']}, tipo: {entradas[d]['tipo']}, codigo: {entradas[d]['codigo']}")
+            print(f"nombre: {entradas[d]['nombre']}, tipo_entrada: {entradas[d]['tipo_entrada']}, codigo: {entradas[d]['codigo']}")
             return True
     return False
 def borrar(lista):
-    mostrar(personas)
+    mostrar(lista)
     cancelar=int(input("ingrese la persona que desea cancelar su compra "))
     if cancelar in lista:
         del lista[cancelar]
