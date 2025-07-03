@@ -6,6 +6,8 @@ personas={
        "tipo_entrada": "G",
        "codigo": "PP9ogh"}
 }
+
+
 def tipos(tipo):
     # if tipo in ["G", "V"]: # esto hace lo mismo que la linea siguiente 
     if tipo =="G" or tipo =="V": 
@@ -78,25 +80,27 @@ def borrar(lista):
     else:
         print("el comprador no existe")
 
-while True:
-    try:
-        print('''MENU PRINCIPAL
-        1.- Comprar entrada.
-        2.- Consultar comprador.
-        3.- Cancelar compra.
-        4.- Salir.''')
-        op=int(input("Seleccione una opcion"))
-        match op:
-            case 1:
-                valida_compra()
-            case 2:
-                consul(personas)
-            case 3:
-                borrar(personas)
-            case 4:
-                print("Saliendo")
-                break
-            case _:
-                print("Opcion invalidad")
-    except Exception as e:
-        print(" algo ha salid mal", e)
+# while True:
+#     try:
+#         print('''MENU PRINCIPAL
+#         1.- Comprar entrada.
+#         2.- Consultar comprador.
+#         3.- Cancelar compra.
+#         4.- Salir.''')
+#         op=int(input("Seleccione una opcion"))
+#         match op:
+#             case 1:
+#                 valida_compra()
+#             case 2:
+#                 consul(personas)
+#             case 3:
+#                 borrar(personas)
+#             case 4:
+#                 print("Saliendo")
+#                 break
+#             case _:
+#                 print("Opcion invalidad")
+#     except Exception as e:
+#         print(" algo ha salid mal", e)
+
+
